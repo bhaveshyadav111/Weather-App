@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+}
+.just{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+.border{
+    border:2px solid black;
+}
+.bold{
+    font-weight: bolder;
+}

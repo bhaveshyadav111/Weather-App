@@ -1,0 +1,110 @@
+/* Base styles (Desktop-first) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.search {
+    display: flex;
+    gap: 0.5em;
+}
+
+.search input {
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.5em 0.8em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.temp, .remain {
+    flex: 1;
+}
+
+.icon img {
+    max-width: 60px;
+}
+
+/* ===== Tablets (≤1024px) ===== */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+/* ===== Mobile Large (≤740px) ===== */
+@media screen and (max-width: 740px) {
+    header {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search input {
+        flex: 1;
+    }
+
+    .btn {
+        padding: 0.4em 0.6em;
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .temp {
+        height: auto;
+        text-align: center;
+    }
+
+    .humIcon, .windIcon {
+        padding: 10px;
+        width: 40%;
+    }
+}
+
+/* ===== Mobile Small (≤480px) ===== */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .icon img {
+        max-width: 40px;
+    }
+
+    .search input {
+        font-size: 0.9rem;
+    }
+}

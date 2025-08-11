@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+}
+body{
+    background-color: #edede9;
+    /* background-color: #240046; */
+    color:#fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top:0px;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    padding:2em 2em;
+}
+
+.logo h1{
+    font-size: 3em;
+    color: #3c096c;
+    margin-right: 0.2em;
+    transition: text-shadow 0.2s ease infinite;
+}
+.search{
+    max-width: 780px;
+    width: 80%;
+    gap:1em;
+    justify-content: flex-end;
+}
+.search input{
+    width: 70%;
+    padding:1rem;
+    border-radius: 22px;
+    border:none;
+    font-size: 1.1rem;
+}
+.btn{
+    padding:1em 2em;
+    border-radius: 22px;
+}
+.btn:hover{
+    background-color: #fff;
+}
+.hero{
+    flex-direction: column;
+    height:80vh;
+    width: 50% ;
+    background:linear-gradient(to bottom , #e0aaff, #b298dc,#a663cc) ;
+    border-radius: 30px;
+}
+.temp{
+    width: 80%;
+    height: 54%;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.info{
+    padding-top: 2rem;
+    gap:3rem;
+}
+.remain{
+    width:80%;
+    height: 30%;
+    gap:30px;
+}
+.rebox{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 100%;
+}
+.icon{
+    padding:20px;
+    width: 30% ;
+}
+.icon img{
+    width: 80% ;
+}
+.tempNumerical{
+    display: inline;
+    width: 30%;
+    font-size: 5rem;
+    color:#000;
+}
+.infoContent{
+    gap:2rem;
+}
+.reNum{
+    font-size: 3rem;
+    color:#000;
+}
+
+.dark{
+    background-color: #571089;
+    .logo h1:nth-child(1){
+        color:#fff;
+    }
+}

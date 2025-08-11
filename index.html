@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo bold flex just align">
+            <h1>Climate</h1>
+        </div>
+        <div class="search flex align">
+            <input type="text" placeholder="city...">
+            <button class="search-btn btn"><img src="search.svg"></button>
+            <button class="mode btn"><img src="light.svg"></button>
+        </div>
+    </header>
+    <section class="flex just align">
+        <div class="hero flex just align">
+            <div class="temp">
+                <h1>Temp</h1>
+                <div class="info flex just align">
+                    <div class="tempIcon icon"><img src="temp.svg"></div>
+                    <div class="tempNumerical">
+                        <p></p>
+                    </div>
+                </div>
+                <h1 class="city">Tijara</h1>
+            </div>
+            <div class="remain flex just align">
+                <div class="hum rebox">
+                    <h1>humidity</h1>
+                    <div class="infoContent flex just align">
+                        <div class="humIcon icon"><img src="hum.svg"></div>
+                        <div class="humNumerical reNum">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wind rebox">
+                    <h1>wind</h1>
+                    <div class="infoContent flex just align">
+                        <div class="windIcon icon"><img src="wind.svg"></div>
+                        <div class="windNumerical reNum">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="weather.js"></script>
+</body>
+
+</html>
