@@ -8,7 +8,7 @@
     .btn{
         padding:0.1em 0.2em;
     }
-    section{
+    section{ 
         display: flex;
         justify-content: center;
         align-items: center;
